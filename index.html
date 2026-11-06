@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080711">
+  <title>しおりちゃんへ — Happy 22nd Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="birthdaySong" src="assets/birthday-song.mp3" preload="auto" loop></audio>
+  <main id="stage" aria-label="しおりちゃんの誕生日ページ">
+    <section class="slide intro active" data-slide="0">
+      <div class="intro-glow"></div>
+      <div class="cake-wrap" aria-label="22本の数字キャンドルがある誕生日ケーキ">
+        <div class="cake">
+          <div class="candle candle-left"><span class="flame"></span><b>2</b></div>
+          <div class="candle candle-right"><span class="flame"></span><b>2</b></div>
+          <div class="icing"></div><div class="cake-top"></div>
+          <div class="cake-body"><i></i><i></i><i></i></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <p class="intro-caption">Happy Birthday</p>
+      <p class="touch-hint">画面をタッチしてください</p>
+      <p class="sound-note" id="soundNote">音楽を再生するには画面をタッチしてください</p>
+    </section>
+
+    <section class="slide greeting" data-slide="1">
+      <div class="greeting-content">
+        <h1>しおりちゃん<br>誕生日おめでとう</h1>
+        <p class="english">しおり's 22nd birthday</p>
+        <p class="wish hidden" id="wish">大切なあなたに、今日が優しさときらめきでいっぱいになりますように</p>
+      </div>
+      <p class="touch-hint">画面をタッチしてください</p>
+    </section>
+
+    <section class="slide memories" data-slide="2">
+      <h2>私たちが共にした幸せな瞬間</h2>
+      <div class="photo-field" id="photoField" aria-live="polite"></div>
+      <p class="memory-ending hidden" id="memoryEnding">しおりちゃんと過ごしたすべての瞬間が幸せだよ</p>
+      <p class="touch-hint">画面をタッチしてください</p>
+    </section>
+
+    <section class="slide letter" data-slide="3">
+      <div class="letter-paper">
+        <p class="letter-heading">大切なしおりちゃんへ。</p>
+        <div id="letterLines" class="letter-lines"></div>
+        <p class="letter-signature hidden" id="signature">愛する윤우から</p>
+      </div>
+      <p class="touch-hint">画面をタッチしてください</p>
+    </section>
+
+    <section class="slide finale" data-slide="4">
+      <div class="final-stars" aria-hidden="true">✦　·　✧　　✦　·　✧</div>
+      <h2>これからの毎日にも、<br>たくさんの幸せが訪れますように</h2>
+      <div class="final-heart">♡</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
